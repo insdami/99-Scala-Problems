@@ -4,12 +4,10 @@ package org.p99.scala
 
 object P01 {
 
-  def last(numbers: List[Int]): Option[Int] = numbers match {
-    case Nil | null => None
-    case head :: tail => tail match {
-      case Nil => Option(head)
-      case _ => last(tail)
-    }
+  def last(numbers: List[Int]): Any = numbers match {
+    case head :: Nil  => head
+    case head :: tail => last(tail)
+    case _ => Nil
   }
 
 }
