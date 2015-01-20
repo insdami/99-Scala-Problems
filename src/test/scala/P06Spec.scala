@@ -11,6 +11,10 @@ class P06Spec extends UnitSpec {
     assert(P06.isPalindrome(List()))
   }
 
+  "given a even list of elements" should "return that is a palindrome list" in {
+    assert(P06.isPalindrome(List(1,2,3,3,2,1)))
+  }
+
   "given a list non-palindrome" should "return false" in {
     assert(!P06.isPalindrome(List(1,2,3)))
   }
