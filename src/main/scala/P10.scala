@@ -2,6 +2,7 @@ package org.p99.scala
 
 object P10 {
 
-  // TODO
+  def encode(elements: List[Any]) = P09.pack(elements).foldLeft(List.empty[(Int, Any)])((list, pack) =>
+    list :+ (pack.size, pack.head))
 
 }
