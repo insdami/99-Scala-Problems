@@ -9,6 +9,5 @@ object P15 {
     else
       elements.foldLeft(List.empty[Any])((duplicatedList, element) => duplicatedList ++ List.fill(times)(element))
 
-  // TODO
 
 }
